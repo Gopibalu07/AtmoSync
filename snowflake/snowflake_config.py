@@ -1,14 +1,9 @@
-
-ACCOUNT = "UFLEKKC-IP07809"
-
-USER = "GOPI200429"
-
-PASSWORD = "GopiBalu20040229"
-
-WAREHOUSE = "ATMOSYNC_WH"
-
-DATABASE = "ATMOSYNC_DB"
-
-SCHEMA = "RAW_DATA"
-
-ROLE = "ACCOUNTADMIN"
+account: PLQUAAJ-KL48718
+      user: priyadarshanipadhy  
+      password: Priyadarshani@22
+      role: ACCOUNTADMIN
+      warehouse: ATMOSYNC_WH
+      database: ATMOSYNC_DB
+      schema: RAW_DATA
+      threads: 1account: PLQUAAJ-KL48718
+     
