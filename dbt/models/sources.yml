@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ATMOSYNC_DB
+    schema: RAW_DATA
+
+    tables:
+      - name: CONTAINER_SENSOR_DATA
+      - name: COMMODITY_PRICE
