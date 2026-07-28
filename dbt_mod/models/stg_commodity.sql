@@ -1,0 +1,6 @@
+SELECT
+    COMMODITY,
+    PRICE_PER_KG,
+    CURRENCY,
+    LAST_UPDATED
+FROM {{ source('raw', 'COMMODITY_PRICE') }}
