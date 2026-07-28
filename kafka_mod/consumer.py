@@ -2,6 +2,7 @@ import json
 
 from kafka import KafkaConsumer
 from kafka.errors import KafkaError
+from snowflake.connection import insert_sensor_data
 
 from kafka_mod.kafka_config import (
     BOOTSTRAP_SERVERS,
@@ -27,6 +28,14 @@ while True:
             try:
 
                 record = message.value
+
+                try:
+
+                    insert_sensor_data(record)
+
+                except Exception as e:
+
+                    print(f"Snowflake Insert Error : {e}")
 
                 print("=" * 70)
                 print("[MESSAGE RECEIVED]")

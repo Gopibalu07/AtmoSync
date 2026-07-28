@@ -63,3 +63,4 @@ CONTAINERS = [
         "base_temperature": 23,
         "base_humidity": 70
     }
+]
