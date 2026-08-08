@@ -917,3 +917,863 @@ ON s.commodity = c.commodity
 [0m11:09:08.370192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CC097050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CDBFC150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CAB257F0>]}
 [0m11:09:08.370586 [debug] [MainThread]: Flushing usage events
 [0m11:09:10.096093 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:22:34.106737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5B8E57F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5E097D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5E097B10>]}
+
+
+============================== 11:22:34.126175 | fe41ec3b-96b1-4faf-9069-7e750db4e052 ==============================
+[0m11:22:34.126175 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:22:34.127176 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\AtmoSync\\dbt_mod', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\AtmoSync\\dbt_mod\\logs'}
+[0m11:22:34.965704 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:22:34.966231 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:22:34.966653 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:22:35.594722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5C00D350>]}
+[0m11:22:35.667184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5F9838A0>]}
+[0m11:22:35.669513 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m11:22:36.219441 [debug] [MainThread]: checksum: 15948c77f26fc04b93f8c33c7d3d95880cdcb8b78a46bd5069b548daa14b9be5, vars: {}, profile: atmosync, target: dev, version: 1.12.0
+[0m11:22:36.450449 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:22:36.450984 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:22:36.451304 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:22:36.461111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5FDE3C50>]}
+[0m11:22:36.594671 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m11:22:36.599952 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m11:22:36.646734 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m11:22:36.668790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5FD47F20>]}
+[0m11:22:36.669356 [info ] [MainThread]: Found 3 models, 2 sources, 545 macros
+[0m11:22:36.670106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5FA04F30>]}
+[0m11:22:36.672193 [info ] [MainThread]: 
+[0m11:22:36.672830 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:22:36.673422 [info ] [MainThread]: 
+[0m11:22:36.674454 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:22:36.679790 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB'
+[0m11:22:36.700880 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB"
+[0m11:22:36.701399 [debug] [ThreadPool]: On list_ATMOSYNC_DB: show terse schemas in database ATMOSYNC_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB"} */
+[0m11:22:36.701777 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:37.917775 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.216 seconds
+[0m11:22:37.944446 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB_RAW_DATA'
+[0m11:22:37.961709 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m11:22:37.962231 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show objects in ATMOSYNC_DB.RAW_DATA
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */;
+[0m11:22:37.962588 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:22:38.596848 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.634 seconds
+[0m11:22:38.609765 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m11:22:38.612644 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show user functions in ATMOSYNC_DB.RAW_DATA
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */
+[0m11:22:38.738361 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.124 seconds
+[0m11:22:38.742278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F6106F450>]}
+[0m11:22:38.753865 [debug] [Thread-2 (]: Began running node model.atmosync.stg_commodity
+[0m11:22:38.754888 [info ] [Thread-2 (]: 1 of 3 START sql view model RAW_DATA.stg_commodity ............................. [RUN]
+[0m11:22:38.756258 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.atmosync.stg_commodity'
+[0m11:22:38.757181 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_commodity
+[0m11:22:38.766961 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_commodity"
+[0m11:22:38.770325 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_commodity
+[0m11:22:38.820875 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_commodity"
+[0m11:22:38.824663 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_commodity"
+[0m11:22:38.825795 [debug] [Thread-2 (]: On model.atmosync.stg_commodity: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_commodity
+  
+  
+  
+  
+  as (
+    SELECT
+    COMMODITY,
+    PRICE_PER_KG,
+    CURRENCY,
+    LAST_UPDATED
+FROM ATMOSYNC_DB.RAW_DATA.COMMODITY_PRICE
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_commodity"} */;
+[0m11:22:38.826848 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:22:39.711452 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.885 seconds
+[0m11:22:39.764412 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F61169C10>]}
+[0m11:22:39.766084 [info ] [Thread-2 (]: 1 of 3 OK created sql view model RAW_DATA.stg_commodity ........................ [[32mSUCCESS 1[0m in 1.00s]
+[0m11:22:39.768443 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_commodity
+[0m11:22:39.769427 [debug] [Thread-2 (]: Began running node model.atmosync.stg_sensor_data
+[0m11:22:39.770386 [info ] [Thread-2 (]: 2 of 3 START sql view model RAW_DATA.stg_sensor_data ........................... [RUN]
+[0m11:22:39.771452 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_commodity, now model.atmosync.stg_sensor_data)
+[0m11:22:39.772050 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m11:22:39.775121 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m11:22:39.777235 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_sensor_data
+[0m11:22:39.780200 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m11:22:39.783507 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_sensor_data"
+[0m11:22:39.784169 [debug] [Thread-2 (]: On model.atmosync.stg_sensor_data: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_sensor_data
+  
+  
+  
+  
+  as (
+    SELECT
+    container_id,
+    commodity,
+    location,
+    temperature,
+    humidity,
+    vibration,
+    battery_level,
+    sensor_status,
+    event_time
+FROM ATMOSYNC_DB.RAW_DATA.CONTAINER_SENSOR_DATA
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */;
+[0m11:22:40.010388 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.226 seconds
+[0m11:22:40.015631 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5F58B8B0>]}
+[0m11:22:40.016798 [info ] [Thread-2 (]: 2 of 3 OK created sql view model RAW_DATA.stg_sensor_data ...................... [[32mSUCCESS 1[0m in 0.24s]
+[0m11:22:40.017857 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_sensor_data
+[0m11:22:40.018745 [debug] [Thread-2 (]: Began running node model.atmosync.fact_container_data
+[0m11:22:40.019330 [info ] [Thread-2 (]: 3 of 3 START sql view model RAW_DATA.fact_container_data ....................... [RUN]
+[0m11:22:40.020173 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.fact_container_data)
+[0m11:22:40.020742 [debug] [Thread-2 (]: Began compiling node model.atmosync.fact_container_data
+[0m11:22:40.023737 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.fact_container_data"
+[0m11:22:40.026154 [debug] [Thread-2 (]: Began executing node model.atmosync.fact_container_data
+[0m11:22:40.029493 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.fact_container_data"
+[0m11:22:40.033413 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.fact_container_data"
+[0m11:22:40.034192 [debug] [Thread-2 (]: On model.atmosync.fact_container_data: create or replace   view ATMOSYNC_DB.RAW_DATA.fact_container_data
+  
+  
+  
+  
+  as (
+    SELECT
+
+    s.container_id,
+    s.commodity,
+    s.location,
+
+    s.temperature,
+    s.humidity,
+    s.vibration,
+
+    s.battery_level,
+    s.sensor_status,
+
+    c.price_per_kg,
+
+    c.currency,
+
+    s.event_time
+
+FROM ATMOSYNC_DB.RAW_DATA.stg_sensor_data s
+
+JOIN ATMOSYNC_DB.RAW_DATA.stg_commodity c
+
+ON s.commodity = c.commodity
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.fact_container_data"} */;
+[0m11:22:40.604157 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.569 seconds
+[0m11:22:40.607849 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe41ec3b-96b1-4faf-9069-7e750db4e052', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F61349EF0>]}
+[0m11:22:40.609012 [info ] [Thread-2 (]: 3 of 3 OK created sql view model RAW_DATA.fact_container_data .................. [[32mSUCCESS 1[0m in 0.59s]
+[0m11:22:40.610019 [debug] [Thread-2 (]: Finished running node model.atmosync.fact_container_data
+[0m11:22:40.611556 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:22:40.611903 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB' was left open.
+[0m11:22:40.612267 [debug] [MainThread]: On list_ATMOSYNC_DB: Close
+[0m11:22:40.797906 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB_RAW_DATA' was left open.
+[0m11:22:40.798417 [debug] [MainThread]: On list_ATMOSYNC_DB_RAW_DATA: Close
+[0m11:22:40.989214 [debug] [MainThread]: Connection 'model.atmosync.fact_container_data' was left open.
+[0m11:22:40.989681 [debug] [MainThread]: On model.atmosync.fact_container_data: Close
+[0m11:22:41.172281 [info ] [MainThread]: 
+[0m11:22:41.172912 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 4.50 seconds (4.50s).
+[0m11:22:41.174395 [debug] [MainThread]: Command end result
+[0m11:22:41.222523 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m11:22:41.227119 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m11:22:41.231966 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m11:22:41.240975 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\AtmoSync\dbt_mod\target\run_results.json
+[0m11:22:41.241396 [info ] [MainThread]: 
+[0m11:22:41.242127 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:22:41.242840 [info ] [MainThread]: 
+[0m11:22:41.243338 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m11:22:41.244450 [debug] [MainThread]: Command `dbt run` succeeded at 11:22:41.244257 after 7.64 seconds
+[0m11:22:41.244991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5BFA64D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5BFA5E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F5E0D57F0>]}
+[0m11:22:41.245426 [debug] [MainThread]: Flushing usage events
+[0m11:22:43.183040 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:06:27.138457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027113D597F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271164EFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271164EFB10>]}
+
+
+============================== 16:06:27.146719 | 65c8997f-2a72-47a8-8559-8c24892529b6 ==============================
+[0m16:06:27.146719 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:06:27.147815 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\AtmoSync\\dbt_mod', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\AtmoSync\\dbt_mod\\logs'}
+[0m16:06:28.198019 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:06:28.198537 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:06:28.198901 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:06:28.703938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711446D350>]}
+[0m16:06:28.797684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027117D238A0>]}
+[0m16:06:28.799080 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m16:06:29.526613 [debug] [MainThread]: checksum: 15948c77f26fc04b93f8c33c7d3d95880cdcb8b78a46bd5069b548daa14b9be5, vars: {}, profile: atmosync, target: dev, version: 1.12.0
+[0m16:06:29.836123 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:06:29.836711 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:06:29.837081 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:06:29.851086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027118183C50>]}
+[0m16:06:30.089074 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m16:06:30.096397 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m16:06:30.149554 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m16:06:30.173294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271180E7F20>]}
+[0m16:06:30.174374 [info ] [MainThread]: Found 3 models, 2 sources, 545 macros
+[0m16:06:30.175227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027117DA4F30>]}
+[0m16:06:30.177647 [info ] [MainThread]: 
+[0m16:06:30.178487 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:06:30.179052 [info ] [MainThread]: 
+[0m16:06:30.180198 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:06:30.189950 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB'
+[0m16:06:30.218931 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB"
+[0m16:06:30.219636 [debug] [ThreadPool]: On list_ATMOSYNC_DB: show terse schemas in database ATMOSYNC_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB"} */
+[0m16:06:30.220100 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:06:31.766946 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.547 seconds
+[0m16:06:31.771889 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB_RAW_DATA'
+[0m16:06:31.789236 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m16:06:31.789993 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show objects in ATMOSYNC_DB.RAW_DATA
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */;
+[0m16:06:31.790401 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:06:32.546733 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.756 seconds
+[0m16:06:32.557090 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m16:06:32.557773 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show user functions in ATMOSYNC_DB.RAW_DATA
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */
+[0m16:06:32.704591 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.146 seconds
+[0m16:06:32.710395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711940F450>]}
+[0m16:06:32.718082 [debug] [Thread-2 (]: Began running node model.atmosync.stg_commodity
+[0m16:06:32.719130 [info ] [Thread-2 (]: 1 of 3 START sql view model RAW_DATA.stg_commodity ............................. [RUN]
+[0m16:06:32.720332 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.atmosync.stg_commodity'
+[0m16:06:32.721080 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_commodity
+[0m16:06:32.730184 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_commodity"
+[0m16:06:32.732104 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_commodity
+[0m16:06:32.786264 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_commodity"
+[0m16:06:32.788542 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_commodity"
+[0m16:06:32.789325 [debug] [Thread-2 (]: On model.atmosync.stg_commodity: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_commodity
+  
+  
+  
+  
+  as (
+    SELECT
+    COMMODITY,
+    PRICE_PER_KG,
+    CURRENCY,
+    LAST_UPDATED
+FROM ATMOSYNC_DB.RAW_DATA.COMMODITY_PRICE
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_commodity"} */;
+[0m16:06:32.791093 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:06:33.994586 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.203 seconds
+[0m16:06:34.050572 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027119509C10>]}
+[0m16:06:34.052307 [info ] [Thread-2 (]: 1 of 3 OK created sql view model RAW_DATA.stg_commodity ........................ [[32mSUCCESS 1[0m in 1.33s]
+[0m16:06:34.054307 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_commodity
+[0m16:06:34.055970 [debug] [Thread-2 (]: Began running node model.atmosync.stg_sensor_data
+[0m16:06:34.058046 [info ] [Thread-2 (]: 2 of 3 START sql view model RAW_DATA.stg_sensor_data ........................... [RUN]
+[0m16:06:34.061071 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_commodity, now model.atmosync.stg_sensor_data)
+[0m16:06:34.063838 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m16:06:34.071217 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m16:06:34.076303 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_sensor_data
+[0m16:06:34.087734 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m16:06:34.095346 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_sensor_data"
+[0m16:06:34.097023 [debug] [Thread-2 (]: On model.atmosync.stg_sensor_data: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_sensor_data
+  
+  
+  
+  
+  as (
+    SELECT
+    container_id,
+    commodity,
+    location,
+    temperature,
+    humidity,
+    vibration,
+    battery_level,
+    sensor_status,
+    event_time
+FROM ATMOSYNC_DB.RAW_DATA.CONTAINER_SENSOR_DATA
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */;
+[0m16:06:34.452639 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.354 seconds
+[0m16:06:34.457102 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002711792B8B0>]}
+[0m16:06:34.458107 [info ] [Thread-2 (]: 2 of 3 OK created sql view model RAW_DATA.stg_sensor_data ...................... [[32mSUCCESS 1[0m in 0.40s]
+[0m16:06:34.459252 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_sensor_data
+[0m16:06:34.460209 [debug] [Thread-2 (]: Began running node model.atmosync.fact_container_data
+[0m16:06:34.460940 [info ] [Thread-2 (]: 3 of 3 START sql view model RAW_DATA.fact_container_data ....................... [RUN]
+[0m16:06:34.461851 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.fact_container_data)
+[0m16:06:34.462464 [debug] [Thread-2 (]: Began compiling node model.atmosync.fact_container_data
+[0m16:06:34.465174 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.fact_container_data"
+[0m16:06:34.466967 [debug] [Thread-2 (]: Began executing node model.atmosync.fact_container_data
+[0m16:06:34.470070 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.fact_container_data"
+[0m16:06:34.473379 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.fact_container_data"
+[0m16:06:34.475335 [debug] [Thread-2 (]: On model.atmosync.fact_container_data: create or replace   view ATMOSYNC_DB.RAW_DATA.fact_container_data
+  
+  
+  
+  
+  as (
+    SELECT
+
+    s.container_id,
+    s.commodity,
+    s.location,
+
+    s.temperature,
+    s.humidity,
+    s.vibration,
+
+    s.battery_level,
+    s.sensor_status,
+
+    c.price_per_kg,
+
+    c.currency,
+
+    s.event_time
+
+FROM ATMOSYNC_DB.RAW_DATA.stg_sensor_data s
+
+JOIN ATMOSYNC_DB.RAW_DATA.stg_commodity c
+
+ON s.commodity = c.commodity
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.fact_container_data"} */;
+[0m16:06:35.266370 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.789 seconds
+[0m16:06:35.269538 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '65c8997f-2a72-47a8-8559-8c24892529b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271196E5EF0>]}
+[0m16:06:35.270266 [info ] [Thread-2 (]: 3 of 3 OK created sql view model RAW_DATA.fact_container_data .................. [[32mSUCCESS 1[0m in 0.81s]
+[0m16:06:35.271673 [debug] [Thread-2 (]: Finished running node model.atmosync.fact_container_data
+[0m16:06:35.273764 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:06:35.274252 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB' was left open.
+[0m16:06:35.274651 [debug] [MainThread]: On list_ATMOSYNC_DB: Close
+[0m16:06:35.474549 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB_RAW_DATA' was left open.
+[0m16:06:35.475099 [debug] [MainThread]: On list_ATMOSYNC_DB_RAW_DATA: Close
+[0m16:06:35.797738 [debug] [MainThread]: Connection 'model.atmosync.fact_container_data' was left open.
+[0m16:06:35.798292 [debug] [MainThread]: On model.atmosync.fact_container_data: Close
+[0m16:06:36.096954 [info ] [MainThread]: 
+[0m16:06:36.097763 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 5.92 seconds (5.92s).
+[0m16:06:36.099432 [debug] [MainThread]: Command end result
+[0m16:06:36.152443 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m16:06:36.158344 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m16:06:36.163822 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m16:06:36.176619 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\AtmoSync\dbt_mod\target\run_results.json
+[0m16:06:36.177040 [info ] [MainThread]: 
+[0m16:06:36.177797 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:06:36.178357 [info ] [MainThread]: 
+[0m16:06:36.178987 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m16:06:36.180128 [debug] [MainThread]: Command `dbt run` succeeded at 16:06:36.179906 after 9.29 seconds
+[0m16:06:36.180834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271144064D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027114405E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271165357F0>]}
+[0m16:06:36.181539 [debug] [MainThread]: Flushing usage events
+[0m16:06:38.138780 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:10:25.877372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265A7E397F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AA5D7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AA5D7B10>]}
+
+
+============================== 21:10:25.888352 | a340e09d-3fec-4cd3-932e-b5307747ecfb ==============================
+[0m21:10:25.888352 [info ] [MainThread]: Running with dbt=1.12.0
+[0m21:10:25.889921 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\AtmoSync\\dbt_mod', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\AtmoSync\\dbt_mod\\logs'}
+[0m21:10:26.893940 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:10:26.894605 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:10:26.895123 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:10:27.323599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265A854D350>]}
+[0m21:10:27.403134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ABE438A0>]}
+[0m21:10:27.404513 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m21:10:27.934649 [debug] [MainThread]: checksum: 15948c77f26fc04b93f8c33c7d3d95880cdcb8b78a46bd5069b548daa14b9be5, vars: {}, profile: atmosync, target: dev, version: 1.12.0
+[0m21:10:28.206125 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:10:28.206664 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m21:10:28.207093 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:10:28.218768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AC2A3C50>]}
+[0m21:10:28.410920 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m21:10:28.416365 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m21:10:28.463461 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m21:10:28.491327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AC207F20>]}
+[0m21:10:28.492264 [info ] [MainThread]: Found 3 models, 2 sources, 545 macros
+[0m21:10:28.493276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ABEC4F30>]}
+[0m21:10:28.496565 [info ] [MainThread]: 
+[0m21:10:28.497440 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:10:28.498112 [info ] [MainThread]: 
+[0m21:10:28.499509 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:10:28.513109 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB'
+[0m21:10:28.541596 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB"
+[0m21:10:28.542220 [debug] [ThreadPool]: On list_ATMOSYNC_DB: show terse schemas in database ATMOSYNC_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB"} */
+[0m21:10:28.542640 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:29.621965 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.079 seconds
+[0m21:10:29.625884 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB_RAW_DATA'
+[0m21:10:29.644311 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m21:10:29.645008 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show objects in ATMOSYNC_DB.RAW_DATA
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */;
+[0m21:10:29.645728 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:31.231253 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.585 seconds
+[0m21:10:31.574070 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m21:10:31.574503 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show user functions in ATMOSYNC_DB.RAW_DATA
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */
+[0m21:10:31.714479 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.139 seconds
+[0m21:10:31.720333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AD533450>]}
+[0m21:10:33.718972 [debug] [Thread-2 (]: Began running node model.atmosync.stg_commodity
+[0m21:10:33.719646 [info ] [Thread-2 (]: 1 of 3 START sql view model RAW_DATA.stg_commodity ............................. [RUN]
+[0m21:10:33.720452 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.atmosync.stg_commodity'
+[0m21:10:33.720868 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_commodity
+[0m21:10:33.727755 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_commodity"
+[0m21:10:33.729840 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_commodity
+[0m21:10:33.761169 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_commodity"
+[0m21:10:33.763269 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_commodity"
+[0m21:10:33.763701 [debug] [Thread-2 (]: On model.atmosync.stg_commodity: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_commodity
+  
+  
+  
+  
+  as (
+    SELECT
+    COMMODITY,
+    PRICE_PER_KG,
+    CURRENCY,
+    LAST_UPDATED
+FROM ATMOSYNC_DB.RAW_DATA.COMMODITY_PRICE
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_commodity"} */;
+[0m21:10:33.764099 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m21:10:36.906553 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 3.142 seconds
+[0m21:10:36.939673 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AD62DC10>]}
+[0m21:10:36.940430 [info ] [Thread-2 (]: 1 of 3 OK created sql view model RAW_DATA.stg_commodity ........................ [[32mSUCCESS 1[0m in 3.22s]
+[0m21:10:36.941544 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_commodity
+[0m21:10:36.942007 [debug] [Thread-2 (]: Began running node model.atmosync.stg_sensor_data
+[0m21:10:36.942511 [info ] [Thread-2 (]: 2 of 3 START sql view model RAW_DATA.stg_sensor_data ........................... [RUN]
+[0m21:10:36.943423 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_commodity, now model.atmosync.stg_sensor_data)
+[0m21:10:36.943997 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m21:10:36.946405 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m21:10:36.948374 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_sensor_data
+[0m21:10:36.951075 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m21:10:36.952991 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_sensor_data"
+[0m21:10:36.953435 [debug] [Thread-2 (]: On model.atmosync.stg_sensor_data: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_sensor_data
+  
+  
+  
+  
+  as (
+    SELECT
+    container_id,
+    commodity,
+    location,
+    temperature,
+    humidity,
+    vibration,
+    battery_level,
+    sensor_status,
+    event_time
+FROM ATMOSYNC_DB.RAW_DATA.CONTAINER_SENSOR_DATA
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */;
+[0m21:10:37.376966 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.423 seconds
+[0m21:10:37.385380 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ABA4B8B0>]}
+[0m21:10:37.387587 [info ] [Thread-2 (]: 2 of 3 OK created sql view model RAW_DATA.stg_sensor_data ...................... [[32mSUCCESS 1[0m in 0.44s]
+[0m21:10:37.389965 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_sensor_data
+[0m21:10:37.392228 [debug] [Thread-2 (]: Began running node model.atmosync.fact_container_data
+[0m21:10:37.393889 [info ] [Thread-2 (]: 3 of 3 START sql view model RAW_DATA.fact_container_data ....................... [RUN]
+[0m21:10:37.447959 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.fact_container_data)
+[0m21:10:37.449535 [debug] [Thread-2 (]: Began compiling node model.atmosync.fact_container_data
+[0m21:10:37.455862 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.fact_container_data"
+[0m21:10:37.468643 [debug] [Thread-2 (]: Began executing node model.atmosync.fact_container_data
+[0m21:10:37.475271 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.fact_container_data"
+[0m21:10:37.482422 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.fact_container_data"
+[0m21:10:37.483738 [debug] [Thread-2 (]: On model.atmosync.fact_container_data: create or replace   view ATMOSYNC_DB.RAW_DATA.fact_container_data
+  
+  
+  
+  
+  as (
+    SELECT
+
+    s.container_id,
+    s.commodity,
+    s.location,
+
+    s.temperature,
+    s.humidity,
+    s.vibration,
+
+    s.battery_level,
+    s.sensor_status,
+
+    c.price_per_kg,
+
+    c.currency,
+
+    s.event_time
+
+FROM ATMOSYNC_DB.RAW_DATA.stg_sensor_data s
+
+JOIN ATMOSYNC_DB.RAW_DATA.stg_commodity c
+
+ON s.commodity = c.commodity
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.fact_container_data"} */;
+[0m21:10:38.278649 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.794 seconds
+[0m21:10:38.283435 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a340e09d-3fec-4cd3-932e-b5307747ecfb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AD80DEF0>]}
+[0m21:10:38.284822 [info ] [Thread-2 (]: 3 of 3 OK created sql view model RAW_DATA.fact_container_data .................. [[32mSUCCESS 1[0m in 0.84s]
+[0m21:10:38.288570 [debug] [Thread-2 (]: Finished running node model.atmosync.fact_container_data
+[0m21:10:38.291452 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:10:38.292408 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB' was left open.
+[0m21:10:38.293221 [debug] [MainThread]: On list_ATMOSYNC_DB: Close
+[0m21:10:39.141820 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB_RAW_DATA' was left open.
+[0m21:10:39.143175 [debug] [MainThread]: On list_ATMOSYNC_DB_RAW_DATA: Close
+[0m21:10:40.240102 [debug] [MainThread]: Connection 'model.atmosync.fact_container_data' was left open.
+[0m21:10:40.241088 [debug] [MainThread]: On model.atmosync.fact_container_data: Close
+[0m21:10:41.516171 [info ] [MainThread]: 
+[0m21:10:41.517005 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 13.02 seconds (13.02s).
+[0m21:10:41.518826 [debug] [MainThread]: Command end result
+[0m21:10:41.595590 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m21:10:41.609524 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m21:10:41.620810 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m21:10:41.646369 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\AtmoSync\dbt_mod\target\run_results.json
+[0m21:10:41.647311 [info ] [MainThread]: 
+[0m21:10:41.648814 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:10:41.650081 [info ] [MainThread]: 
+[0m21:10:41.651784 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m21:10:41.654038 [debug] [MainThread]: Command `dbt run` succeeded at 21:10:41.653712 after 16.13 seconds
+[0m21:10:41.654927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265A7809750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265ABBC7150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000265AA611B00>]}
+[0m21:10:41.655802 [debug] [MainThread]: Flushing usage events
+[0m21:10:45.069207 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:58:39.687403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6996A97F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69BE47750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69BE47D90>]}
+
+
+============================== 16:58:39.724709 | 84c644f1-38c4-4d9e-8b38-a645d00df7c6 ==============================
+[0m16:58:39.724709 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:58:39.740971 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\AtmoSync\\dbt_mod', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\AtmoSync\\dbt_mod\\logs'}
+[0m16:58:46.002580 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:58:46.005600 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:58:46.008650 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:58:49.197050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E699DBD350>]}
+[0m16:58:50.028598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69D7938A0>]}
+[0m16:58:50.036942 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m16:58:55.925714 [debug] [MainThread]: checksum: 15948c77f26fc04b93f8c33c7d3d95880cdcb8b78a46bd5069b548daa14b9be5, vars: {}, profile: atmosync, target: dev, version: 1.12.0
+[0m16:58:57.816738 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:58:57.819604 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:58:57.821859 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:58:57.889173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69DBF7C50>]}
+[0m16:58:59.291645 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m16:58:59.337856 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m16:58:59.691958 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m16:58:59.844485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69DB57F20>]}
+[0m16:58:59.853616 [info ] [MainThread]: Found 3 models, 2 sources, 545 macros
+[0m16:58:59.864679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69D814F30>]}
+[0m16:58:59.918669 [info ] [MainThread]: 
+[0m16:59:00.038888 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:59:00.136176 [info ] [MainThread]: 
+[0m16:59:00.196816 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:59:00.385930 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB'
+[0m16:59:01.111928 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB"
+[0m16:59:01.118190 [debug] [ThreadPool]: On list_ATMOSYNC_DB: show terse schemas in database ATMOSYNC_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB"} */
+[0m16:59:01.123650 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:59:20.407508 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 19.278 seconds
+[0m16:59:20.669257 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB_RAW_DATA'
+[0m16:59:21.244218 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m16:59:21.249143 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show objects in ATMOSYNC_DB.RAW_DATA
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */;
+[0m16:59:21.252804 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:59:23.592217 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.339 seconds
+[0m16:59:23.703673 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m16:59:23.711188 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show user functions in ATMOSYNC_DB.RAW_DATA
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */
+[0m16:59:23.928679 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.212 seconds
+[0m16:59:24.020945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69EE7F450>]}
+[0m16:59:24.191244 [debug] [Thread-2 (]: Began running node model.atmosync.stg_commodity
+[0m16:59:24.196683 [info ] [Thread-2 (]: 1 of 3 START sql view model RAW_DATA.stg_commodity ............................. [RUN]
+[0m16:59:24.205700 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.atmosync.stg_commodity'
+[0m16:59:24.208563 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_commodity
+[0m16:59:24.283176 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_commodity"
+[0m16:59:24.307449 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_commodity
+[0m16:59:24.626144 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_commodity"
+[0m16:59:24.701812 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_commodity"
+[0m16:59:24.714936 [debug] [Thread-2 (]: On model.atmosync.stg_commodity: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_commodity
+  
+  
+  
+  
+  as (
+    SELECT
+    COMMODITY,
+    PRICE_PER_KG,
+    CURRENCY,
+    LAST_UPDATED
+FROM ATMOSYNC_DB.RAW_DATA.COMMODITY_PRICE
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_commodity"} */;
+[0m16:59:24.722348 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:59:26.227829 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.506 seconds
+[0m16:59:26.454516 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69EF7DC10>]}
+[0m16:59:26.459345 [info ] [Thread-2 (]: 1 of 3 OK created sql view model RAW_DATA.stg_commodity ........................ [[32mSUCCESS 1[0m in 2.24s]
+[0m16:59:26.467805 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_commodity
+[0m16:59:26.471417 [debug] [Thread-2 (]: Began running node model.atmosync.stg_sensor_data
+[0m16:59:26.476297 [info ] [Thread-2 (]: 2 of 3 START sql view model RAW_DATA.stg_sensor_data ........................... [RUN]
+[0m16:59:26.481543 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_commodity, now model.atmosync.stg_sensor_data)
+[0m16:59:26.487366 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m16:59:26.498547 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m16:59:26.548098 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_sensor_data
+[0m16:59:26.593786 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m16:59:26.630368 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_sensor_data"
+[0m16:59:26.634431 [debug] [Thread-2 (]: On model.atmosync.stg_sensor_data: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_sensor_data
+  
+  
+  
+  
+  as (
+    SELECT
+    container_id,
+    commodity,
+    location,
+    temperature,
+    humidity,
+    vibration,
+    battery_level,
+    sensor_status,
+    event_time
+FROM ATMOSYNC_DB.RAW_DATA.CONTAINER_SENSOR_DATA
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */;
+[0m16:59:27.005482 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.367 seconds
+[0m16:59:27.042604 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69D39B8B0>]}
+[0m16:59:27.049249 [info ] [Thread-2 (]: 2 of 3 OK created sql view model RAW_DATA.stg_sensor_data ...................... [[32mSUCCESS 1[0m in 0.56s]
+[0m16:59:27.058838 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_sensor_data
+[0m16:59:27.064540 [debug] [Thread-2 (]: Began running node model.atmosync.fact_container_data
+[0m16:59:27.075091 [info ] [Thread-2 (]: 3 of 3 START sql view model RAW_DATA.fact_container_data ....................... [RUN]
+[0m16:59:27.146334 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.fact_container_data)
+[0m16:59:27.157739 [debug] [Thread-2 (]: Began compiling node model.atmosync.fact_container_data
+[0m16:59:27.214995 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.fact_container_data"
+[0m16:59:27.244054 [debug] [Thread-2 (]: Began executing node model.atmosync.fact_container_data
+[0m16:59:27.273533 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.fact_container_data"
+[0m16:59:27.321965 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.fact_container_data"
+[0m16:59:27.327496 [debug] [Thread-2 (]: On model.atmosync.fact_container_data: create or replace   view ATMOSYNC_DB.RAW_DATA.fact_container_data
+  
+  
+  
+  
+  as (
+    SELECT
+
+    s.container_id,
+    s.commodity,
+    s.location,
+
+    s.temperature,
+    s.humidity,
+    s.vibration,
+
+    s.battery_level,
+    s.sensor_status,
+
+    c.price_per_kg,
+
+    c.currency,
+
+    s.event_time
+
+FROM ATMOSYNC_DB.RAW_DATA.stg_sensor_data s
+
+JOIN ATMOSYNC_DB.RAW_DATA.stg_commodity c
+
+ON s.commodity = c.commodity
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.fact_container_data"} */;
+[0m16:59:27.805158 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.473 seconds
+[0m16:59:27.839155 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '84c644f1-38c4-4d9e-8b38-a645d00df7c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69F165F90>]}
+[0m16:59:27.849019 [info ] [Thread-2 (]: 3 of 3 OK created sql view model RAW_DATA.fact_container_data .................. [[32mSUCCESS 1[0m in 0.70s]
+[0m16:59:27.862909 [debug] [Thread-2 (]: Finished running node model.atmosync.fact_container_data
+[0m16:59:27.894149 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:59:27.931606 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB' was left open.
+[0m16:59:27.937717 [debug] [MainThread]: On list_ATMOSYNC_DB: Close
+[0m16:59:28.545193 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB_RAW_DATA' was left open.
+[0m16:59:28.555426 [debug] [MainThread]: On list_ATMOSYNC_DB_RAW_DATA: Close
+[0m16:59:29.190061 [debug] [MainThread]: Connection 'model.atmosync.fact_container_data' was left open.
+[0m16:59:29.195634 [debug] [MainThread]: On model.atmosync.fact_container_data: Close
+[0m16:59:29.525582 [info ] [MainThread]: 
+[0m16:59:29.538860 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 29.32 seconds (29.32s).
+[0m16:59:29.652108 [debug] [MainThread]: Command end result
+[0m16:59:30.234664 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m16:59:30.432989 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m16:59:30.621334 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m16:59:31.269681 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\AtmoSync\dbt_mod\target\run_results.json
+[0m16:59:31.277850 [info ] [MainThread]: 
+[0m16:59:31.333210 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:59:31.395254 [info ] [MainThread]: 
+[0m16:59:31.492120 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m16:59:31.662490 [debug] [MainThread]: Command `dbt run` succeeded at 16:59:31.660145 after 54.22 seconds
+[0m16:59:31.677286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69BE7E2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E699D55350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E69BE81B00>]}
+[0m16:59:31.693820 [debug] [MainThread]: Flushing usage events
+[0m16:59:40.251259 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:00.882250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B063997F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08B37D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08B37B10>]}
+
+
+============================== 19:27:00.898634 | 5598a742-aed3-4733-819c-365dfbb14b6e ==============================
+[0m19:27:00.898634 [info ] [MainThread]: Running with dbt=1.12.0
+[0m19:27:00.901382 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\AtmoSync\\dbt_mod', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\AtmoSync\\dbt_mod\\logs'}
+[0m19:27:02.201804 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:27:02.202673 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:27:02.203409 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:27:02.939459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B06AAD350>]}
+[0m19:27:03.045213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0A4238A0>]}
+[0m19:27:03.046860 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m19:27:03.774525 [debug] [MainThread]: checksum: 15948c77f26fc04b93f8c33c7d3d95880cdcb8b78a46bd5069b548daa14b9be5, vars: {}, profile: atmosync, target: dev, version: 1.12.0
+[0m19:27:04.036106 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:27:04.036628 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m19:27:04.036950 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:27:04.048498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0A887C50>]}
+[0m19:27:04.203610 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m19:27:04.209236 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m19:27:04.245920 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m19:27:04.264712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0A7E7F20>]}
+[0m19:27:04.265279 [info ] [MainThread]: Found 3 models, 2 sources, 545 macros
+[0m19:27:04.265930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0A4A4F30>]}
+[0m19:27:04.268188 [info ] [MainThread]: 
+[0m19:27:04.268797 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:27:04.269285 [info ] [MainThread]: 
+[0m19:27:04.270330 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:27:04.275896 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB'
+[0m19:27:04.293700 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB"
+[0m19:27:04.294188 [debug] [ThreadPool]: On list_ATMOSYNC_DB: show terse schemas in database ATMOSYNC_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB"} */
+[0m19:27:04.294593 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:05.379966 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.085 seconds
+[0m19:27:05.383986 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ATMOSYNC_DB_RAW_DATA'
+[0m19:27:05.399066 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m19:27:05.399559 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show objects in ATMOSYNC_DB.RAW_DATA
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */;
+[0m19:27:05.399964 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:06.205239 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.805 seconds
+[0m19:27:06.212209 [debug] [ThreadPool]: Using snowflake connection "list_ATMOSYNC_DB_RAW_DATA"
+[0m19:27:06.212681 [debug] [ThreadPool]: On list_ATMOSYNC_DB_RAW_DATA: show user functions in ATMOSYNC_DB.RAW_DATA
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_ATMOSYNC_DB_RAW_DATA"} */
+[0m19:27:06.346324 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.133 seconds
+[0m19:27:06.350650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0BB13450>]}
+[0m19:27:06.361472 [debug] [Thread-2 (]: Began running node model.atmosync.stg_commodity
+[0m19:27:06.362391 [info ] [Thread-2 (]: 1 of 3 START sql view model RAW_DATA.stg_commodity ............................. [RUN]
+[0m19:27:06.363684 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.atmosync.stg_commodity'
+[0m19:27:06.364236 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_commodity
+[0m19:27:06.372186 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_commodity"
+[0m19:27:06.375552 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_commodity
+[0m19:27:06.415812 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_commodity"
+[0m19:27:06.418743 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_commodity"
+[0m19:27:06.419427 [debug] [Thread-2 (]: On model.atmosync.stg_commodity: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_commodity
+  
+  
+  
+  
+  as (
+    SELECT
+    COMMODITY,
+    PRICE_PER_KG,
+    CURRENCY,
+    LAST_UPDATED
+FROM ATMOSYNC_DB.RAW_DATA.COMMODITY_PRICE
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_commodity"} */;
+[0m19:27:06.419931 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:27:07.227576 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.808 seconds
+[0m19:27:07.256742 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0BC0DC10>]}
+[0m19:27:07.258123 [info ] [Thread-2 (]: 1 of 3 OK created sql view model RAW_DATA.stg_commodity ........................ [[32mSUCCESS 1[0m in 0.89s]
+[0m19:27:07.259184 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_commodity
+[0m19:27:07.259722 [debug] [Thread-2 (]: Began running node model.atmosync.stg_sensor_data
+[0m19:27:07.260284 [info ] [Thread-2 (]: 2 of 3 START sql view model RAW_DATA.stg_sensor_data ........................... [RUN]
+[0m19:27:07.261219 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_commodity, now model.atmosync.stg_sensor_data)
+[0m19:27:07.261733 [debug] [Thread-2 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m19:27:07.263784 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m19:27:07.265426 [debug] [Thread-2 (]: Began executing node model.atmosync.stg_sensor_data
+[0m19:27:07.268182 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m19:27:07.270249 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.stg_sensor_data"
+[0m19:27:07.270823 [debug] [Thread-2 (]: On model.atmosync.stg_sensor_data: create or replace   view ATMOSYNC_DB.RAW_DATA.stg_sensor_data
+  
+  
+  
+  
+  as (
+    SELECT
+    container_id,
+    commodity,
+    location,
+    temperature,
+    humidity,
+    vibration,
+    battery_level,
+    sensor_status,
+    event_time
+FROM ATMOSYNC_DB.RAW_DATA.CONTAINER_SENSOR_DATA
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */;
+[0m19:27:07.607185 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.336 seconds
+[0m19:27:07.616656 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0A02B8B0>]}
+[0m19:27:07.618496 [info ] [Thread-2 (]: 2 of 3 OK created sql view model RAW_DATA.stg_sensor_data ...................... [[32mSUCCESS 1[0m in 0.36s]
+[0m19:27:07.635984 [debug] [Thread-2 (]: Finished running node model.atmosync.stg_sensor_data
+[0m19:27:07.639471 [debug] [Thread-2 (]: Began running node model.atmosync.fact_container_data
+[0m19:27:07.641301 [info ] [Thread-2 (]: 3 of 3 START sql view model RAW_DATA.fact_container_data ....................... [RUN]
+[0m19:27:07.647059 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.fact_container_data)
+[0m19:27:07.648945 [debug] [Thread-2 (]: Began compiling node model.atmosync.fact_container_data
+[0m19:27:07.654448 [debug] [Thread-2 (]: Writing injected SQL for node "model.atmosync.fact_container_data"
+[0m19:27:07.658130 [debug] [Thread-2 (]: Began executing node model.atmosync.fact_container_data
+[0m19:27:07.663479 [debug] [Thread-2 (]: Writing runtime sql for node "model.atmosync.fact_container_data"
+[0m19:27:07.668391 [debug] [Thread-2 (]: Using snowflake connection "model.atmosync.fact_container_data"
+[0m19:27:07.669362 [debug] [Thread-2 (]: On model.atmosync.fact_container_data: create or replace   view ATMOSYNC_DB.RAW_DATA.fact_container_data
+  
+  
+  
+  
+  as (
+    SELECT
+
+    s.container_id,
+    s.commodity,
+    s.location,
+
+    s.temperature,
+    s.humidity,
+    s.vibration,
+
+    s.battery_level,
+    s.sensor_status,
+
+    c.price_per_kg,
+
+    c.currency,
+
+    s.event_time
+
+FROM ATMOSYNC_DB.RAW_DATA.stg_sensor_data s
+
+JOIN ATMOSYNC_DB.RAW_DATA.stg_commodity c
+
+ON s.commodity = c.commodity
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.fact_container_data"} */;
+[0m19:27:07.996928 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.327 seconds
+[0m19:27:07.999788 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5598a742-aed3-4733-819c-365dfbb14b6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B0BDF9EF0>]}
+[0m19:27:08.000512 [info ] [Thread-2 (]: 3 of 3 OK created sql view model RAW_DATA.fact_container_data .................. [[32mSUCCESS 1[0m in 0.36s]
+[0m19:27:08.001357 [debug] [Thread-2 (]: Finished running node model.atmosync.fact_container_data
+[0m19:27:08.003861 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:27:08.004718 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB' was left open.
+[0m19:27:08.005158 [debug] [MainThread]: On list_ATMOSYNC_DB: Close
+[0m19:27:08.194449 [debug] [MainThread]: Connection 'list_ATMOSYNC_DB_RAW_DATA' was left open.
+[0m19:27:08.194962 [debug] [MainThread]: On list_ATMOSYNC_DB_RAW_DATA: Close
+[0m19:27:08.408117 [debug] [MainThread]: Connection 'model.atmosync.fact_container_data' was left open.
+[0m19:27:08.408811 [debug] [MainThread]: On model.atmosync.fact_container_data: Close
+[0m19:27:08.766790 [info ] [MainThread]: 
+[0m19:27:08.767804 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 4.50 seconds (4.50s).
+[0m19:27:08.769288 [debug] [MainThread]: Command end result
+[0m19:27:08.815252 [debug] [MainThread]: Wrote artifact WritableManifest to C:\AtmoSync\dbt_mod\target\manifest.json
+[0m19:27:08.820472 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\AtmoSync\dbt_mod\target\semantic_manifest.json
+[0m19:27:08.824964 [debug] [MainThread]: Wrote artifact OsiDocument to C:\AtmoSync\dbt_mod\target\osi_document.json
+[0m19:27:08.835390 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\AtmoSync\dbt_mod\target\run_results.json
+[0m19:27:08.835899 [info ] [MainThread]: 
+[0m19:27:08.836653 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:27:08.837147 [info ] [MainThread]: 
+[0m19:27:08.837739 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m19:27:08.838776 [debug] [MainThread]: Command `dbt run` succeeded at 19:27:08.838565 after 8.31 seconds
+[0m19:27:08.839232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08B6E2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B06A45350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B08B71B00>]}
+[0m19:27:08.839692 [debug] [MainThread]: Flushing usage events
+[0m19:27:10.992945 [debug] [MainThread]: An error was encountered while trying to flush usage events

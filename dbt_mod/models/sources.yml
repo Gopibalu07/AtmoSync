@@ -8,3 +8,4 @@ sources:
     tables:
       - name: CONTAINER_SENSOR_DATA
       - name: COMMODITY_PRICE
+      - name: PORT_LOCATION
